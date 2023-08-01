@@ -1,0 +1,131 @@
+
+.section-nav li .section_column {
+    /*height: 18px;*/
+}
+
+.section_column:last-child {
+    margin-right: 0;
+}
+
+.section_column_layout_1_1, .section_column_layout_1_1 {
+    width: 100%;
+    margin-left: 0;
+}
+.pull-right a {
+    text-decoration: none;
+}
+.main-campus h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.main-campus h5 span {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.section_column {
+    text-align: center;
+    padding: 18% 0;
+    display: inline-block;
+    float: left;
+    background: #aaa;
+    color: #ddd;
+    margin-right: 4%;
+    font-size: 12px;
+}
+
+.section_column_layout_1_2, .section_column_layout_1_2 {
+    width: 48%;
+}
+
+.section_column_layout_1_3, .section_column_layout_1_3 {
+    width: 30.6666%;
+}
+
+.section-nav li {
+    padding: 0.5em;
+    float: left;
+    width: 17%;
+    margin: 1.5%;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 2em;
+    list-style-type: none;
+}
+
+.thisContainer .row button {
+    text-align: center;
+    border: 1px dashed #d5dadf;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.thisContainer .row {
+    position: relative;
+    margin: 20px 1.5%;
+    padding: 2.5em 1em 1em;
+    border: 1px dashed #d5dadf;
+}
+
+.section-controls a.nav-item {
+    line-height: 2;
+    width: 50px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #999;
+    background: #f7f7f7;
+}
+
+.section-collapse {
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    padding: 15px;
+}
+
+.inner-row .inner-col {
+    height: 100% !important;
+}
+
+.parent-col {
+    border: none;
+}
+
+.parent-col .inner-row {
+    border: 2px dashed #d5dadf;
+    padding: 1.5em 1em 1.5em;
+}
+
+
+
+
+div#loadingDiv {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    place-content: center;
+    place-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #4666c545;
+    z-index: 9999;
+}
+
+div#loadingDiv .spinner-border {
+    width: 100px;
+    height: 100px;
+}
+#sortable .card-header {
+    cursor: pointer;
+}
+

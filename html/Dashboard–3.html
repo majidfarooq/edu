@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edu</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <div class="container-xl">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Find College</a> </li>
+                <li class="nav-item"> <a data-bs-toggle="modal" data-bs-target="#createAccount" class="nav-link">Plan for College</a> </li>
+                <li class="nav-item"> <a data-bs-toggle="modal" data-bs-target="#createProfile" class="nav-link">About Us</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Financial</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Aid Consultation</a> </li>
+            </ul>
+            <form>
+                <div class="d-flex align-items-center">
+                    <div class="nav-item dropdown heart-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="dropdown-toggle-img" src="images/heart.png" alt="dropdown image" data-toggle="dropdown"> </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropdown user-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="dropdown-toggle-img" src="images/user.png" alt="dropdown image" data-toggle="dropdown"> </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid page-title pt-3">
+    <div class="container">
+        <div class="row px-5">
+            <div class="col-lg-5 col-md-12 btn-group-section gap-3">
+                <a href="#" class="btn btn-white"><span><img class="me-2" src="images/history.png" alt="list"></span>Back</a>
+            </div>
+            <div class="col-lg-7 col-md-12 page-title-text">
+                <h1>Your Profile</h1> </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-4">
+    <div class="container">
+        <div class="row">
+            <div class="card-body bg-white shadow">
+                <div class="row">
+                    <div class="nav flex-column nav-pills col-lg-4 col-md-12 col-sm-12 account-info" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Account Information</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Educational Information</button>
+                    </div>
+                    <div class="tab-content col-lg-8 col-md-12 col-sm-12 account-info-inner" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="login-wrap">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <div class="file-upload">
+                                            <div class="image-upload-wrap">
+                                                <input class="file-upload-input" id="profile-photo" type="file" onchange="readURL(this);" accept="image/*">
+                                                <div class="drag-text">
+                                                    <img src="images/uploud-your-photo.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="file-upload-content">
+                                                <img class="file-upload-image" src="#" alt="your image">
+                                                <div class="image-title-wrap">
+                                                    <button type="button" onclick="removeUpload()" class="remove-image btn btn-danger my-4">Remove
+                                                        <span class="text-white">Uploaded Image</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">First / Given Name</label>
+                                            <input type="text" name="fname" class="form-control" placeholder="John">
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">Last / Surname </label>
+                                            <input type="text" name="lname" class="form-control" placeholder="Doe">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">Phone</label>
+                                            <input type="number" name="phone" class="form-control" placeholder="+1 (123) 456-7890 ">
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">Gender</label>
+                                            <input type="text" name="gender" class="form-control" placeholder="Male">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-6 col-md-12">
+                                                <label class="form-label">Date of Birth</label>
+                                                <input type="date" name="date" class="form-control" placeholder="DD/MM/YYYY">
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">Address 1</label>
+                                            <input type="text" name="address" class="form-control" placeholder="DD/MM/YYYY">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-6 col-md-12">
+                                                <label class="form-label">Address 2</label>
+                                                <input type="text" name="date" class="form-control" placeholder="Suite 0000">
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">City</label>
+                                            <input type="text" name="city" class="form-control" placeholder="Detroit">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-6 col-md-12">
+                                                <label class="form-label">State</label>
+                                                <input type="text" name="state" class="form-control" placeholder="Michigan">
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label class="form-label">Zip code</label>
+                                            <input type="text" name="zip_code" class="form-control" placeholder="48228">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-12 col-md-12">
+                                            <label class="form-label">Country</label>
+                                            <select name="country" class="form-select form-control" aria-label="Default select example">
+                                                <option selected="">United States</option>
+                                                <option value="1">United States</option>
+                                                <option value="2">United States</option>
+                                                <option value="3">United States</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-end next-start">
+                                        <a href="#" class="btn btn-link me-3">Cancel Changes</a>
+                                        <a href="#" class="btn btn-primary">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="login-wrap login-wrap-second">
+                                <div class="form">
+                                    <div class="d-flex educational-inform gap-4 my-4">
+                                        <span class="wpcf7-list-item first form-check educational mb-3">
+                                        <input type="checkbox" id="firstYearStudent" name="diameter[]" value="">
+                                        <label class="chekboxMainText" for="firstYearStudent">
+                                            <span class="cnv-name">First year student</span>
+                                        </label>
+                                    </span>
+                                        <span class="wpcf7-list-item first form-check educational mb-3">
+                                    <input type="checkbox" id="transferStudent" name="diameter[]" value="">
+                                    <label class="chekboxMainText" for="transferStudent">
+                                        <span class="cnv-name">Transfer student</span>
+                                    </label>
+                                </span>
+                                        <span class="wpcf7-list-item first form-check educational mb-3">
+                                    <input type="checkbox" id="graduateStudent" name="diameter[]" value="">
+                                    <label class="chekboxMainText" for="graduateStudent">
+                                        <span class="cnv-name">Graduate student</span>
+                                    </label>
+                                </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Highest Education Level Attained</label>
+                                        <select class="form-select form-control" aria-label="Default select example">
+                                            <option selected="">Select</option>
+                                            <option value="1">Select</option>
+                                            <option value="1">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Attained Institution Name</label>
+                                        <input type="text" name="institution_name" class="form-control" placeholder="Jhon">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Fields of Interest <span> (enter values separating with comma)</span></label>
+                                        <select class="form-select form-control" aria-label="Default select example">
+                                            <option selected="">Lorem Ipsum</option>
+                                            <option value="1">Select</option>
+                                            <option value="1">Select</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 text-end next-start">
+                                        <a href="#" class="btn btn-link me-3">Cancel Changes</a>
+                                        <a href="#" class="btn btn-primary">Next</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 footer-logo"> <img src="images/logo-footer.png" alt="logo"> </div>
+            <div class="col-lg-4 col-md-12 footer-links-use">
+                <ul>
+                    <div class="col-lg-5 col-md-12 col-sm-12 border-right footer-bottom">
+                        <li><a target="_blank" href="https://ottren.ca">Home</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/about-us">About</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/services">Find Collage </a></li>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 footer-bottom footer-bottom-another">
+                        <li><a target="_blank" href="https://ottren.ca/portfolio">Plan for Collage</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/contact">Terms of Use</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/contact">Privacy Policy</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-links">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkdin.png" alt="linkdin"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer" id="footerCopyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 footer-logo-bottom"> <img class="footer-logo" src="images/footer-bottom.png" alt="logo"> </div>
+            <div class="col-lg-4 col-md-12 footer-links-usebottom">
+                <p class="text-white">© All rights reserved Edu Brokers</p>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-linksbottom">
+                <p class="text-white"> Terms of use / Privacy Policy / cookie Policy</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="createAccount" tabindex="-1" aria-labelledby="createAccountLabel" aria-hidden="true">
+    <div class="modal-dialog createAccount modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h5>Choose Account Type</h5>
+                <hr>
+                <p class="mb-5 text-width">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p> <a data-bs-toggle="modal" data-bs-target="#logIn" class="btn btn-primary w-100">Student?</a>
+                <div class="col-12 or-text text-center my-3">
+                    <p>OR</p>
+                </div> <a href="#" class="btn btn-link w-100">College/University?</a> </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="logIn" tabindex="-1" aria-labelledby="logInLabel" aria-hidden="true">
+    <div class="modal-dialog loginAccount modal-dialog-centered">
+        <div class="modal-content">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Log In</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Create Account</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="form pt-5">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Jhondoe@gmail.com"> </div>
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="***************"> </div>
+                        <div class="form-group creat-account text-end">
+                            <p><a href="#">Create your Account</a></p>
+                        </div> <a href="#" class="btn btn-link w-100">Login</a>
+                        <div class="col-12 text-center my-3">
+                            <div class="offset-lg-6 col-lg-6 col-md-12 d-flex or-log">
+                                <p class="me-2">OR</p>
+                                <p>LOG IN WITH</p>
+                            </div>
+                        </div>
+                        <div class="text-center social-modal my-4">
+                            <button type="button" class="btn btn-link facebook-link btn-floating mx-3"> <i class="fab fa-facebook-f"></i> </button>
+                            <button type="button" class="btn btn-link google-link btn-floating mx-3"> <i class="fab fa-google"></i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="form pt-5">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Jhondoe@gmail.com"> </div>
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="***************"> </div>
+                        <div class="form-group">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" name="cpassword" class="form-control" placeholder="***************"> </div> <a href="#" class="btn btn-link w-100">Create your Account</a>
+                        <div class="col-12 text-center my-3">
+                            <div class="offset-lg-6 col-lg-6 col-md-12 d-flex or-log">
+                                <p class="me-2">OR</p>
+                                <p>LOG IN WITH</p>
+                            </div>
+                        </div>
+                        <div class="text-center social-modal my-4">
+                            <button type="button" class="btn btn-link facebook-link btn-floating mx-3"> <i class="fab fa-facebook-f"></i> </button>
+                            <button type="button" class="btn btn-link google-link btn-floating mx-3"> <i class="fab fa-google"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="createProfile" tabindex="-1" aria-labelledby="createProfileLabel" aria-hidden="true">
+    <div class="modal-dialog creatAccountOne modal-dialog-centered">
+        <div class="modal-content">
+            <div class="wrap d-md-flex">
+                <div class="img"> <img class="w-100" src="images/creat-profile.png" alt="create"> </div>
+                <div class="login-wrap">
+                    <div class="d-flex justify-content-between stepCreate">
+                        <h5>Create Account</h5>
+                        <p class="step1">Step-1</p>
+                    </div>
+                    <div class="form">
+                        <div class="form-group">
+                            <div class="file-upload">
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" id="profile-photo" type='file' onchange="readURL(this);" accept="image/*" />
+                                    <div class="drag-text"> <img src="images/uploud-your-photo.png" alt=""> </div>
+                                </div>
+                                <div class="file-upload-content"> <img class="file-upload-image" src="#" alt="your image" />
+                                    <div class="image-title-wrap">
+                                        <button type="button" onclick="removeUpload()" class="remove-image btn btn-danger my-4">Remove <span class="text-white">Uploaded Image</span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">First / Given Name</label>
+                                <input type="text" name="fname" class="form-control" placeholder="John"> </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">Last / Surname </label>
+                                <input type="text" name="lname" class="form-control" placeholder="Doe"> </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12">
+                                <label class="form-label">Phone</label>
+                                <input type="phone" name="phone" class="form-control" placeholder="+1 (123) 456-7890 "> </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">Gender</label>
+                                <input type="text" name="gender" class="form-control" placeholder="Male"> </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" name="date" class="form-control" placeholder="DD/MM/YYYY"> </div>
+                        </div>
+                        <div class="col-12 text-end next-start"> <a href="#" class="btn btn-primary">Next</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="owlcarousel/owl.carousel.js"></script>
+<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if(scroll >= 100) {
+            $(".fixed-top").addClass("sticky-header");
+        } else {
+            $(".fixed-top").removeClass("sticky-header");
+        }
+    });
+</script>
+<script type="text/javascript">
+    $('#recentlyViewd').owlCarousel({
+        loop: true,
+        screenLeft:true,
+        margin: 20,
+        dots: false,
+        nav: true,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+
+    });
+
+</script>
+</body>
+
+</html>

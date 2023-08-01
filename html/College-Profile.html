@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edu</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <div class="container-xl">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Find College</a>
+                </li>
+                <li class="nav-item">
+                    <a data-bs-toggle="modal" data-bs-target="#createAccount" class="nav-link">Plan for College</a>
+                </li>
+                <li class="nav-item">
+                    <a data-bs-toggle="modal" data-bs-target="#createProfile" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Financial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aid Consultation</a>
+                </li>
+
+            </ul>
+            <form>
+                <div class="d-flex align-items-center">
+                    <div class="nav-item dropdown heart-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="dropdown-toggle-img" src="images/heart.png" alt="dropdown image" data-toggle="dropdown">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="d-flex justify-content-between stepCreate">
+                                <h5>Short List</h5>
+                                <p class="step1">(4)</p>
+                            </div>
+                            <div class="card-body recently-slider bg-white shadow mb-3">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-1 bd-highlight"><img src="images/slider.png" alt="slider"></div>
+                                    <div class="p-1 bd-highlight dropdown-text">
+                                        <p class="Auburn">Auburn University</p>
+                                        <p>220 South Pleasant Street
+                                            Amherst, MA 01002</p>
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex">
+                                        <a href="#" class="btn btn-link">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body recently-slider bg-white shadow mb-3">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-1 bd-highlight"><img src="images/slider.png" alt="slider"></div>
+                                    <div class="p-1 bd-highlight dropdown-text">
+                                        <p class="Auburn">Auburn University</p>
+                                        <p>220 South Pleasant Street
+                                            Amherst, MA 01002</p>
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex">
+                                        <a href="#" class="btn btn-link">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body recently-slider bg-white shadow mb-3">
+                                <div class="d-flex bd-highlight">
+                                    <div class="p-1 bd-highlight"><img src="images/slider.png" alt="slider"></div>
+                                    <div class="p-1 bd-highlight dropdown-text">
+                                        <p class="Auburn">Auburn University</p>
+                                        <p>220 South Pleasant Street
+                                            Amherst, MA 01002</p>
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex">
+                                        <a href="#" class="btn btn-link">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropdown user-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="dropdown-toggle-img" src="images/user.png" alt="dropdown image" data-toggle="dropdown">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid page-title pt-3">
+    <div class="container">
+        <div class="row px-5">
+            <div class="col-lg-5 col-md-12 btn-group-section gap-3">
+            <a href="#" class="btn btn-success"><span><img class="me-2" src="images/list.png" alt="list"></span>Current Applications</a>
+            <a href="#" class="btn btn-white"><span><img class="me-2" src="images/accept.png" alt="list"></span>Applications History</a>
+            </div>
+            <div class="search col-12 mt-4">
+                <div class="profile-new-tab col-lg-12 col-md-12 mt-4">
+                        <div class="d-flex bg-white shadow bd-highlight">
+                            <div class="p-3 bd-highlight amherst-college-bg">
+                                <h5 class="mb-0 text-white">Amherst College</h5>
+                            </div>
+                            <div class="p-3 d-flex align-items-center bd-highlight border-right amherst-website-name">
+                                <img class="me-2" src="images/internet.png" alt="">
+                                <p>www.amherst.edu</p>
+                            </div>
+                            <div class="p-2 mx-4 d-flex flex-fill bd-highlight applicationdeadlines">
+                                <div class="form-group">
+                                    <label class="form-label mb-1">Application deadlines:</label>
+                                    <div class="applicationdeadlines">
+                                        <input type="text" name="fall" class="form-control fall" placeholder="Fall 2022">
+                                        <p class="mx-2">To</p>
+                                        <input type="text" name="spring" class="form-control spring" placeholder="Spring 2023">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pt-3">
+    <div class="container">
+        <div class="row px-5">
+            <div class="col-lg-12 col-m-12 col-sm-12 college-profile-section">
+                <div class="card bg-white shadow mb-4 p-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="college-profile-pic bg-white shadow text-center samecollege-height">
+                                <img class="company-profile" src="images/allegheny-profile.png" alt="allegheny" >
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 mb-4">
+                            <div class="college-profile-text gray-box shadow p-4 pb-5 samecollege-height">
+                                <div class="main-campus">
+                                    <h5><span>Main campus</span> : Amherst College</h5>
+                                </div>
+                                <hr>
+                                <div class="bg-white d-flex mb-2 p-2 gap-3">
+                                    <img src="images/location.png" class="location" alt="location">
+                                    <p class="storng-p">Address:</p>
+                                    <p>Amherst, MA 01002, United States</p>
+                                </div>
+                                <div class="bg-white d-flex mb-2 p-2 gap-3">
+                                    <img src="images/phone-alt.png" class="phone" alt="phone">
+                                    <p class="storng-p">Phone:</p>
+                                    <p>(413) 542-2928</p>
+                                </div>
+                                <div class="bg-white d-flex mb-2 p-2 gap-3">
+                                    <img src="images/simple-email.png" class="email" alt="email">
+                                    <p class="storng-p">Contact person email:</p>
+                                    <p>Admission@amherst.edu</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 mb-4">
+                            <div class="scholarship-info-section gray-box shadow p-4">
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 scholarship-info">
+                                    <h6>Scholarship information: </h6>
+                                    <hr>
+                                    <div class="bg-white p-3">
+                                        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 scholarship-info">
+                                    <h6>Scholarship information: </h6>
+                                    <hr>
+                                    <div class="bg-white p-3">
+                                        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white shadow mb-4 p-4">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 mb-4">
+                            <div class="scholarship-info-section gray-box shadow scholarship-info p-4">
+
+                                <div class="row">
+                                    <h6>Financial Information:</h6>
+                                    <hr>
+                                    <div class="col-lg-6 col-md-12 scholarship-info">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Full-Time</th>
+                                                <th scope="col">In-State</th>
+                                                <th scope="col">Out-of-State</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Annual Tuition</td>
+                                                <td>$6,889</td>
+                                                <td>$11,258</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mandatory Fees</td>
+                                                <td>$00</td>
+                                                <td>$00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Room & Board</td>
+                                                <td>$150</td>
+                                                <td>$00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Room & Board</td>
+                                                <td>$150</td>
+                                                <td>$00</td>
+                                            </tr>
+                                            <tr class="last-tr">
+                                                <td>Total Yearly</td>
+                                                <td>$7,105</td>
+                                                <td>$11,474</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 scholarship-info">
+                                        <table class="table table-striped part-time">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Part-Time</th>
+                                                <th scope="col">In-State</th>
+                                                <th scope="col">Out-of-State</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Tuition - Per Credit</td>
+                                                <td>$6,889</td>
+                                                <td>$11,258</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="3">Mandatory Fees</th>
+                                            </tr>
+                                            <tr>
+                                                <td>EDU Brokers Discount</td>
+                                                <td>$150</td>
+                                                <td>$00</td>
+                                            </tr>
+                                            <tr class="last-tr">
+                                                <td>Total Per Credit</td>
+                                                <td>$454.105</td>
+                                                <td>$744.75</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow mb-4 p-4">
+                    <h6>Programs/Courses list and terms:</h6>
+                    <hr>
+                    <div class="gray-box programs-courses shadow p-2">
+                        <div class="card-body bg-white shadow mb-3">
+                            <div class="row">
+                                <div class="p-1 col-lg-3 col-md-3 col-sm-12 d-flex align-items-center user-title bd-highlight">
+                                    <div class="user-text">
+                                        <p>Project Managment</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 d-flex user-title-section justify-content-end">
+                                    <div class="p-1 d-flex bd-highlight">
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Program Type:</p>
+                                            <p>Bachelor Degree</p>
+                                        </div>
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Published Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+                                        <div class="highest-edu p-2">
+                                            <p class="strong">Applied Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex view-student">
+                                        <a href="#" class="btn btn-link">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-white shadow mb-3">
+                            <div class="row">
+                                <div class="p-1 col-lg-3 col-md-3 col-sm-12 d-flex align-items-center user-title bd-highlight">
+                                    <div class="user-text">
+                                        <p>Project Managment</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 d-flex user-title-section justify-content-end">
+                                    <div class="p-1 d-flex bd-highlight">
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Program Type:</p>
+                                            <p>Bachelor Degree</p>
+                                        </div>
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Published Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+                                        <div class="highest-edu p-2">
+                                            <p class="strong">Applied Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex view-student">
+                                        <a href="#" class="btn btn-link">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-white shadow mb-3">
+                            <div class="row">
+                                <div class="p-1 col-lg-3 col-md-3 col-sm-12 d-flex align-items-center user-title bd-highlight">
+                                    <div class="user-text">
+                                        <p>Project Managment</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 d-flex user-title-section justify-content-end">
+                                    <div class="p-1 d-flex bd-highlight">
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Program Type:</p>
+                                            <p>Bachelor Degree</p>
+                                        </div>
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Published Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+                                        <div class="highest-edu p-2">
+                                            <p class="strong">Applied Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex view-student">
+                                        <a href="#" class="btn btn-link">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-white shadow mb-3">
+                            <div class="row">
+                                <div class="p-1 col-lg-3 col-md-3 col-sm-12 d-flex align-items-center user-title bd-highlight">
+                                    <div class="user-text">
+                                        <p>Project Managment</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 d-flex user-title-section justify-content-end">
+                                    <div class="p-1 d-flex bd-highlight">
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Program Type:</p>
+                                            <p>Bachelor Degree</p>
+                                        </div>
+                                        <div class="city-state p-2 border-right-1">
+                                            <p class="strong">Published Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+                                        <div class="highest-edu p-2">
+                                            <p class="strong">Applied Date:</p>
+                                            <p>2/2/2023</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="p-1 bd-highlight d-flex view-student">
+                                        <a href="#" class="btn btn-link">View
+                                            Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card bg-white shadow mb-4 p-4">
+                    <h6>Ready to Apply?</h6>
+                    <hr>
+                        <div class="mb-4 row">
+                            <label for="inputProgramField" class="col-md-4 col-sm-12 col-form-label">Select Program and Field Of Interest</label>
+                            <div class="col-md-4 col-sm-12">
+                                <select name="program" class="form-select form-control" aria-label="Default select example">
+                                    <option selected="">United States</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">United States</option>
+                                    <option value="3">United States</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <select name="program-field" class="form-select form-control" aria-label="Default select example">
+                                    <option selected="">United States</option>
+                                    <option value="1">United States</option>
+                                    <option value="2">United States</option>
+                                    <option value="3">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12">
+                        <button type="button" class="btn btn-primary w-100 mb-2">Just Add to Favorites for Now!</button>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                        <button type="button" class="btn btn-link w-100 mb-2">Apply on Common App </button>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                        <button type="button" class="btn btn-link w-100 mb-2">Apply Directly through the uni</button>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                        <button type="button" class="btn btn-link w-100 mb-2">Apply Via Black College App </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 footer-logo">
+                    <img src="images/logo-footer.png" alt="logo">
+                </div>
+                <div class="col-lg-4 col-md-12 footer-links-use">
+                    <ul>
+                        <div class="col-lg-5 col-md-12 col-sm-12 footer-bottom">
+                            <li><a target="_blank" href="https://ottren.ca">Home</a></li>
+                            <li><a target="_blank" href="https://ottren.ca/about-us">About</a></li>
+                            <li><a target="_blank" href="https://ottren.ca/services">Find Collage </a></li>
+                        </div>
+                        <div class="col-lg-5 col-md-12 col-sm-12 footer-bottom footer-bottom-another">
+                            <li><a target="_blank" href="https://ottren.ca/portfolio">Plan for Collage</a></li>
+                            <li><a target="_blank" href="https://ottren.ca/contact">Terms of Use</a></li>
+                            <li><a target="_blank" href="https://ottren.ca/contact">Privacy Policy</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-links">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkdin.png" alt="linkdin"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+
+                </div>
+            </div>
+        </div>
+</div>
+<div class="footer" id="footerCopyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 footer-logo-bottom">
+                <img class="footer-logo" src="images/footer-bottom.png" alt="logo">
+            </div>
+            <div class="col-lg-4 col-md-12 footer-links-usebottom">
+                <p class="text-white">© All rights reserved Edu Brokers</p>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-linksbottom">
+                <p class="text-white"> Terms of use / Privacy Policy / cookie Policy</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="createRating" tabindex="-1" aria-labelledby="createRatingLabel" aria-hidden="true">
+    <div class="modal-dialog create-newprofile modal-dialog-centered">
+        <div class="modal-content">
+
+                <h5>Create Rating Factors for ease of Shortlisting</h5>
+                <p>Your ratings apply across all applicants,
+                    you determine the factors and rate applicants.</p>
+                <hr class="rating-hr">
+                <p class="out-state">Out of State Tuition</p>
+
+                <div class="d-flex bd-highlight grades-gpa">
+                    <div class="p-1 w-100 bd-highlight">
+                        <p>Grades / GPA</p>
+                    </div>
+                    <div class="p-1 flex-shrink-1 bd-highlight croos-section">
+                        <img src="images/croos.png" alt="cross">
+                    </div>
+                </div>
+
+                <div class="d-flex bd-highlight grades-gpa">
+                    <div class="p-1 w-100 bd-highlight">
+                        <p>Test Grades</p>
+                    </div>
+                    <div class="p-1 flex-shrink-1 bd-highlight croos-section">
+                        <img src="images/croos.png" alt="cross">
+                    </div>
+                </div>
+                <div class="d-flex bd-highlight grades-gpa">
+                    <div class="p-1 w-100 bd-highlight">
+                        <p>Essay</p>
+                    </div>
+                    <div class="p-1 flex-shrink-1 bd-highlight croos-section">
+                        <img src="images/croos.png" alt="cross">
+                    </div>
+                </div>
+                <div class="d-flex bd-highlight grades-gpa">
+                    <div class="p-1 w-100 bd-highlight">
+                        <p>Income</p>
+                    </div>
+                    <div class="p-1 flex-shrink-1 bd-highlight croos-section">
+                        <img src="images/croos.png" alt="cross">
+                    </div>
+                </div>
+                <div class="d-flex bd-highlight grades-gpa">
+                    <div class="p-1 w-100 bd-highlight">
+                        <p>Program Relevant Education</p>
+                    </div>
+                    <div class="p-1 flex-shrink-1 bd-highlight croos-section">
+                        <img src="images/croos.png" alt="cross">
+                    </div>
+                </div>
+                <div class="d-flex bd-highlight grades-gpa">
+                    <div class="p-1 w-100 bd-highlight">
+                        <p>Sports and Extracurricular activities</p>
+                    </div>
+                    <div class="p-1 flex-shrink-1 bd-highlight croos-section">
+                        <img src="images/croos.png" alt="cross">
+                    </div>
+                </div>
+                <div class="form-group creat-account text-end my-3">
+                    <p><a href="#">Add More</a></p>
+                </div>
+
+                <a href="#" class="btn btn-success w-100">Create</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $(".fixed-top").addClass("sticky-header");
+        } else {
+            $(".fixed-top").removeClass("sticky-header");
+        }
+    });
+
+</script>
+<script type="text/javascript">
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('.image-upload-wrap').hide();
+                $('.file-upload-image').attr('src', e.target.result);
+                $('.file-upload-content').show();
+                $('.image-title').html(input.files[0].name);
+            };
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            removeUpload();
+        }
+    }
+
+    function removeUpload() {
+        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+        $('.file-upload-content').hide();
+        $('.image-upload-wrap').show();
+    }
+
+    $('.image-upload-wrap').bind('dragover', function() {
+        $('.image-upload-wrap').addClass('image-dropping');
+    });
+    $('.image-upload-wrap').bind('dragleave', function() {
+        $('.image-upload-wrap').removeClass('image-dropping');
+    });
+</script>
+</body>
+</html>

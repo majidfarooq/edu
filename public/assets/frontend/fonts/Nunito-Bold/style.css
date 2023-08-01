@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Nunito-Bold';
+  src: url('/path-to/Nunito-Bold.woff2') format('woff2'),
+       url('/path-to/Nunito-Bold.woff') format('woff'),
+       url('/path-to/Nunito-Bold.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'Nunito-Bold', sans-serif;
+}

@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edu</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+    <div class="container-xl">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Find College</a> </li>
+                <li class="nav-item"> <a data-bs-toggle="modal" data-bs-target="#createAccount" class="nav-link">Plan for College</a> </li>
+                <li class="nav-item"> <a data-bs-toggle="modal" data-bs-target="#createProfile" class="nav-link">About Us</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Financial</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Aid Consultation</a> </li>
+            </ul>
+            <form>
+                <div class="d-flex align-items-center">
+                    <div class="nav-item dropdown heart-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="dropdown-toggle-img" src="images/heart.png" alt="dropdown image" data-toggle="dropdown"> </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropdown user-drop">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img class="dropdown-toggle-img" src="images/user.png" alt="dropdown image" data-toggle="dropdown"> </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid page-title pt-3">
+    <div class="container">
+        <div class="row px-5">
+            <div class="col-lg-5 col-md-12 btn-group-section gap-3"> <a href="#" class="btn btn-success"><span><img class="me-2" src="images/list.png" alt="list"></span>Current Applications</a> <a href="#" class="btn btn-white"><span><img class="me-2" src="images/history.png" alt="list"></span>Applications History</a> </div>
+            <div class="col-lg-7 col-md-12 page-title-text">
+                <h1>Your Profile</h1> </div>
+            <div class="search col-12 mt-4">
+                <div class="d-flex bg-white shadow justify-content-between">
+                    <div class="search-1 d-flex align-items-center">
+                        <input type="text" name="search" class="form-control" placeholder="| Search College">
+                    </div>
+                    <div class="search-display d-flex justify-content-end">
+                        <div class="search-zip same-seacrh">
+                            <div class="form-group">
+                                <label class="form-label">Zip Code</label>
+                                <input type="text" name="zip_code" class="form-control" placeholder="48228">
+                            </div>
+                        </div>
+                        <div class="search-state same-seacrh">
+                            <div class="form-group">
+                                <label class="form-label">State</label>
+                                <input type="text" name="state" class="form-control" placeholder="Michigan">
+                            </div>
+                        </div>
+                        <div class="search-tuition same-seacrh">
+                            <div class="form-group">
+                                <label class="form-label">Annual Tuition Fees:</label>
+                                <div class="d-flex justify-content-start">
+                                    <input type="text" name="start_time" class="form-control start_time" placeholder="$0">
+                                    <p>To</p>
+                                    <input type="text" name="start_end" class="form-control start_end" placeholder="$200,000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-groupbtn same-seacrhbtn">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-4">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-3 col-lg-6 col-md-12 text-center college-search-title">
+                <h1 class="my-2">College Search</h1> </div>
+            <div class="d-flex justify-content-end col-lg-3 col-md-12">
+                <div class="bg-white shadow p-1"> <span class="wpcf7-list-item first form-check sort-by p-3">
+                       <input type="checkbox" id="RememberPassword" name="diameter[]" value="">
+                         <label class="chekboxMainText" for="RememberPassword">
+                         <span class="cnv-name">Sort by: Nearest First</span> </label>
+						</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-4 applicationStatus">
+    <div class="container">
+        <div class="row">
+            <h2>Application Status:</h2>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="rejection-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Rejection Received</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="bg-white shadow applicationProgress d-flex align-items-center p-2"> <span class="green-mark me-2"><i class="fas fa-circle"></i></span>
+                            <p>Application In-Progress</p>
+                        </div>
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-m-12 text-center show-more my-5"> <a href="#" class="btn btn-primary">Show  More</a> </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-4 p-5 applicationStatus featured-section">
+    <div class="container">
+        <div class="row">
+            <h2>Featured Colleges</h2>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-end p-2">
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-end p-2">
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-end p-2">
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-m-6 col-sm-12">
+                <div class="card bg-white shadow mb-4 p-1">
+                    <div class="d-flex justify-content-end p-2">
+                        <div class="bg-white heartfont shadow p-2"> <i class="fas fa-heart"></i> </div>
+                    </div>
+                    <div class="card-img text-center"> <img class="card-img-top" src="images/amherst.png" alt="amherst"> </div>
+                    <div class="d-flex justify-content-between bottom-card p-2">
+                        <h6 class="mb-0">Amherst College</h6> <a href="#" class="btn btn-link">Show Details</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5 slider-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <div class="bg-white shadow p-4">
+            <h2 class="mb-4">Recently viewed</h2>
+            <div class="owl-carousel owl-theme recentlyViewd" id="recentlyViewd">
+                <div class="item">
+                    <div class="card-body recently-slider bg-white shadow">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight"><img src="images/slider.png" alt="slider"></div>
+                            <div class="p-2 bd-highlight">
+                                <p class="Auburn">Auburn University</p>
+                                <p>220 South Pleasant Street
+                                    Amherst, MA 01002</p>
+                            </div>
+                            <div class="p-2 bd-highlight d-flex">
+                                <a href="#" class="btn btn-link">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-body recently-slider bg-white shadow">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight"><img src="images/slider2.png" alt="slider"></div>
+                            <div class="p-2 bd-highlight">
+                                <p class="Auburn">Auburn University</p>
+                                <p>220 South Pleasant Street
+                                    Amherst, MA 01002</p>
+                            </div>
+                            <div class="p-2 bd-highlight d-flex">
+                                <a href="#" class="btn btn-link">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-body recently-slider bg-white shadow">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight"><img src="images/slider3.png" alt="slider"></div>
+                            <div class="p-2 bd-highlight">
+                                <p class="Auburn">Auburn University</p>
+                                <p>220 South Pleasant Street
+                                    Amherst, MA 01002</p>
+                            </div>
+                            <div class="p-2 bd-highlight d-flex">
+                                <a href="#" class="btn btn-link">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-body recently-slider bg-white shadow">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight"><img src="images/slider.png" alt="slider"></div>
+                            <div class="p-2 bd-highlight">
+                                <p class="Auburn">Auburn University</p>
+                                <p>220 South Pleasant Street
+                                    Amherst, MA 01002</p>
+                            </div>
+                            <div class="p-2 bd-highlight d-flex">
+                                <a href="#" class="btn btn-link">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card-body recently-slider bg-white shadow">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 bd-highlight"><img src="images/slider2.png" alt="slider"></div>
+                            <div class="p-2 bd-highlight">
+                                <p class="Auburn">Auburn University</p>
+                                <p>220 South Pleasant Street
+                                    Amherst, MA 01002</p>
+                            </div>
+                            <div class="p-2 bd-highlight d-flex">
+                                <a href="#" class="btn btn-link">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid my-5 need-application">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-m-8 col-sm-12 mx-auto">
+                <div class="card bg-white shadow p-1 text-center p-4">
+                    <h2>Need Help?</h2>
+                    <h3>Check out our <span><a target="_blank" href="https://cloud.ferozitech.com/edu/faqs">FAQs</a></span> or <span><a target="_blank" href="https://cloud.ferozitech.com/edu/contact">Get in touch</a></span> with us.</h3>
+                </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 footer-logo"> <img src="images/logo-footer.png" alt="logo"> </div>
+            <div class="col-lg-4 col-md-12 footer-links-use">
+                <ul>
+                    <div class="col-lg-5 col-md-12 col-sm-12 border-right footer-bottom">
+                        <li><a target="_blank" href="https://ottren.ca">Home</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/about-us">About</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/services">Find Collage </a></li>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 footer-bottom footer-bottom-another">
+                        <li><a target="_blank" href="https://ottren.ca/portfolio">Plan for Collage</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/contact">Terms of Use</a></li>
+                        <li><a target="_blank" href="https://ottren.ca/contact">Privacy Policy</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-links">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkdin.png" alt="linkdin"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer" id="footerCopyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 footer-logo-bottom"> <img class="footer-logo" src="images/footer-bottom.png" alt="logo"> </div>
+            <div class="col-lg-4 col-md-12 footer-links-usebottom">
+                <p class="text-white">© All rights reserved Edu Brokers</p>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-linksbottom">
+                <p class="text-white"> Terms of use / Privacy Policy / cookie Policy</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="createAccount" tabindex="-1" aria-labelledby="createAccountLabel" aria-hidden="true">
+    <div class="modal-dialog createAccount modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <h5>Choose Account Type</h5>
+                <hr>
+                <p class="mb-5 text-width">Lorem Ipsum has been the industry's standard dummy text ever since the 1500</p> <a data-bs-toggle="modal" data-bs-target="#logIn" class="btn btn-primary w-100">Student?</a>
+                <div class="col-12 or-text text-center my-3">
+                    <p>OR</p>
+                </div> <a href="#" class="btn btn-link w-100">College/University?</a> </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="logIn" tabindex="-1" aria-labelledby="logInLabel" aria-hidden="true">
+    <div class="modal-dialog loginAccount modal-dialog-centered">
+        <div class="modal-content">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Log In</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Create Account</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="form pt-5">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Jhondoe@gmail.com"> </div>
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="***************"> </div>
+                        <div class="form-group creat-account text-end">
+                            <p><a href="#">Create your Account</a></p>
+                        </div> <a href="#" class="btn btn-link w-100">Login</a>
+                        <div class="col-12 text-center my-3">
+                            <div class="offset-lg-6 col-lg-6 col-md-12 d-flex or-log">
+                                <p class="me-2">OR</p>
+                                <p>LOG IN WITH</p>
+                            </div>
+                        </div>
+                        <div class="text-center social-modal my-4">
+                            <button type="button" class="btn btn-link facebook-link btn-floating mx-3"> <i class="fab fa-facebook-f"></i> </button>
+                            <button type="button" class="btn btn-link google-link btn-floating mx-3"> <i class="fab fa-google"></i> </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="form pt-5">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" name="email" class="form-control" placeholder="Jhondoe@gmail.com"> </div>
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="***************"> </div>
+                        <div class="form-group">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" name="cpassword" class="form-control" placeholder="***************"> </div> <a href="#" class="btn btn-link w-100">Create your Account</a>
+                        <div class="col-12 text-center my-3">
+                            <div class="offset-lg-6 col-lg-6 col-md-12 d-flex or-log">
+                                <p class="me-2">OR</p>
+                                <p>LOG IN WITH</p>
+                            </div>
+                        </div>
+                        <div class="text-center social-modal my-4">
+                            <button type="button" class="btn btn-link facebook-link btn-floating mx-3"> <i class="fab fa-facebook-f"></i> </button>
+                            <button type="button" class="btn btn-link google-link btn-floating mx-3"> <i class="fab fa-google"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="createProfile" tabindex="-1" aria-labelledby="createProfileLabel" aria-hidden="true">
+    <div class="modal-dialog creatAccountOne modal-dialog-centered">
+        <div class="modal-content">
+            <div class="wrap d-md-flex">
+                <div class="img"> <img class="w-100" src="images/creat-profile.png" alt="create"> </div>
+                <div class="login-wrap">
+                    <div class="d-flex justify-content-between stepCreate">
+                        <h5>Create Account</h5>
+                        <p class="step1">Step-1</p>
+                    </div>
+                    <div class="form">
+                        <div class="form-group">
+                            <div class="file-upload">
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" id="profile-photo" type='file' onchange="readURL(this);" accept="image/*" />
+                                    <div class="drag-text"> <img src="images/uploud-your-photo.png" alt=""> </div>
+                                    <span>Change Image</span>
+
+                                </div>
+                                <div class="file-upload-content">
+                                    <img class="file-upload-image" src="#" alt="your image" />
+                                    <div class="image-title-wrap">
+                                        <button type="button" onclick="removeUpload()" class="remove-image btn btn-danger my-4">Remove
+                                            <span class="text-white">Uploaded Image</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">First / Given Name</label>
+                                <input type="text" name="fname" class="form-control" placeholder="John"> </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">Last / Surname </label>
+                                <input type="text" name="lname" class="form-control" placeholder="Doe"> </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12 col-md-12">
+                                <label class="form-label">Phone</label>
+                                <input type="phone" name="phone" class="form-control" placeholder="+1 (123) 456-7890 "> </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">Gender</label>
+                                <input type="text" name="gender" class="form-control" placeholder="Male"> </div>
+                            <div class="form-group col-lg-6 col-md-12">
+                                <label class="form-label">Date of Birth</label>
+                                <input type="date" name="date" class="form-control" placeholder="DD/MM/YYYY"> </div>
+                        </div>
+                        <div class="col-12 text-end next-start"> <a href="#" class="btn btn-primary">Next</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="owlcarousel/owl.carousel.js"></script>
+<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if(scroll >= 100) {
+            $(".fixed-top").addClass("sticky-header");
+        } else {
+            $(".fixed-top").removeClass("sticky-header");
+        }
+    });
+</script>
+<script type="text/javascript">
+    $('#recentlyViewd').owlCarousel({
+        loop: true,
+        screenLeft:true,
+        margin: 20,
+        dots: false,
+        nav: true,
+        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+
+    });
+
+</script>
+</body>
+
+</html>

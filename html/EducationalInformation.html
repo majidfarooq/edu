@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edu</title>
+</head>
+<body>
+
+<section class="h-100 gradient-form" style="background-color: hsl(0deg 0% 0% / 53%);">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+                <div class="card rounded-3 text-black">
+                    <div class="wrap d-md-flex">
+                        <div class="img">
+                            <img class="w-100" src="images/step3.png" alt="step">
+                        </div>
+                        <div class="login-wrap login-wrap-second">
+                            <div class="d-flex justify-content-between stepCreate">
+                                <h5>Educational Information</h5>
+                                <p class="step1">Step-3</p>
+                            </div>
+                            <div class="form">
+                                <div class="d-flex educational-inform gap-4 my-4">
+                                        <span class="wpcf7-list-item first form-check educational mb-3">
+                                        <input type="checkbox" id="firstYearStudent" name="diameter[]" value="">
+                                        <label class="chekboxMainText" for="firstYearStudent">
+                                            <span class="cnv-name">First year student</span>
+                                        </label>
+                                    </span>
+                                <span class="wpcf7-list-item first form-check educational mb-3">
+                                    <input type="checkbox" id="transferStudent" name="diameter[]" value="">
+                                    <label class="chekboxMainText" for="transferStudent">
+                                        <span class="cnv-name">Transfer student</span>
+                                    </label>
+                                </span>
+                                <span class="wpcf7-list-item first form-check educational mb-3">
+                                    <input type="checkbox" id="graduateStudent" name="diameter[]" value="">
+                                    <label class="chekboxMainText" for="graduateStudent">
+                                        <span class="cnv-name">Graduate student</span>
+                                    </label>
+                                </span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Highest Education Level Attained</label>
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Select</option>
+                                        <option value="1">Select</option>
+                                        <option value="1">Select</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Attained Institution Name</label>
+                                    <input type="text" name="institution_name" class="form-control" placeholder="Jhon">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Fields of Interest <span> (enter values separating with comma)</span></label>
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Lorem Ipsum</option>
+                                        <option value="1">Select</option>
+                                        <option value="1">Select</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 text-end next-start">
+                                    <a href="#" class="btn btn-primary">Creat</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            $(".fixed-top").addClass("sticky-header");
+        } else {
+            $(".fixed-top").removeClass("sticky-header");
+        }
+    });
+
+</script>
+<script>
+    // var $chekbox = document.querySelector('.educational');
+    // $chekbox.addEventListener("click", function(ev){
+    //     if (ev.target.tagName == "INPUT") {
+    //         if (ev.target.checked) {
+    //             ev.target.parentNode.parentNode.classList.add("selected-chekbox");
+    //         }else {
+    //             ev.target.parentNode.parentNode.classList.remove("selected-chekbox");
+    //         }
+    //     }
+    // });
+</script>
+</body>
+</html>
